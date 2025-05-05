@@ -1,0 +1,6 @@
+@TutoringWebsite.API_HostAddress = http://localhost:5192
+
+GET {{TutoringWebsite.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
