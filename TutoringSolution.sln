@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoringWebsite.API", "TutoringWebsite.API\TutoringWebsite.API.csproj", "{CE7CDBC8-AF12-4D13-BE1E-89259AAB4812}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentUnitTesting", "StudentUnitTesting\StudentUnitTesting.csproj", "{334C9795-8309-4607-99D0-C374E5F3D746}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoringUnitTesting", "StudentUnitTesting\TutoringUnitTesting.csproj", "{334C9795-8309-4607-99D0-C374E5F3D746}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

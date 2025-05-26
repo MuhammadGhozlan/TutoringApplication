@@ -9,8 +9,9 @@ namespace TutoringWebsite.API.Models
         [Required]
         public required string Name { get; set; }
         public DateTime DoB { get; set; }
-        [Required,EmailAddress]
+        [Required, EmailAddress]
         public required string Email { get; set; }
         public required string UserId { get; set; }
+        public required bool IsDeleted { get; set; } = false;
     }
 }

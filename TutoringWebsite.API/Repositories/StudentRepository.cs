@@ -184,7 +184,7 @@ namespace TutoringWebsite.API.Repositories
                 _logger.LogError("the ID is not valid");
                 throw new ArgumentNullException("enter a valid ID");
             }
-            var student = await _dataContext.Students.SingleOrDefaultAsync(u => u.ID == id);
+            var student = await _dataContext.Students.SingleOrDefaultAsync(u => u.ID == id && u.IsDeleted == false);
             if (student == null)
             {
                 _logger.LogError("no students found for this ID");
