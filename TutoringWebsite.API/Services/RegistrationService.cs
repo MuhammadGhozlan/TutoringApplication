@@ -86,6 +86,18 @@ namespace TutoringWebsite.API.Services
                     Message = "user has been deleted"
                 };
             }
+            var instructor = await _dataContext.Instructors.SingleOrDefaultAsync(i => i.Email == request.Email);
+            if(instructor != null && instructor.IsDeleted == true)
+            {
+                user.LockoutEnabled = true;
+                user.LockoutEnd = DateTimeOffset.MaxValue;
+                await _userManager.UpdateAsync(user);
+                return new ServiceResultDto
+                {
+                    Success = false,
+                    Message = "user has been deleted"
+                };
+            }
             var result = await _signInManager.PasswordSignInAsync(user, request.password, true, false);
             if(!result.Succeeded)
             {

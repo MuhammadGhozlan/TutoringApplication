@@ -8,6 +8,7 @@ namespace TutoringWebsite.API.Models
         public MappingProfile()
         {
             CreateMap<Student,StudentResponseDto>();
+            CreateMap<Instructor,InstructorResponseDto>();
         }
     }
 }
