@@ -92,6 +92,7 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json","Tutoring API V1");
     c.RoutePrefix = string.Empty;
 });
+app.MapSwagger();
 app.MapControllers();
 
 var summaries = new[]
