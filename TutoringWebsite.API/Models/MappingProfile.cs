@@ -9,6 +9,7 @@ namespace TutoringWebsite.API.Models
         {
             CreateMap<Student,StudentResponseDto>();
             CreateMap<Instructor,InstructorResponseDto>();
+            CreateMap<Course,CourseResponseDto>();
         }
     }
 }
